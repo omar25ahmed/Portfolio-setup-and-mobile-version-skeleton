@@ -22,24 +22,14 @@
     height: 150px;
     left: 24px;
     top: 114px;
-
-    /* Header / 2 */
-
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 52px;
-    /* or 130% */
     display: flex;
     align-items: center;
-
-    /* Neutrals/N800 */
-
     color: #172b4d;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -52,18 +42,12 @@
     height: 146px;
     left: 24px;
     top: 276px;
-
-    /* Body / 2 */
-
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    /* or 150% */
-    /* Neutrals/N600 */
     color: #344563;
-    /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -75,19 +59,14 @@
     position: static;
     width: 200px;
     height: 24px;
-    left: 0px;
-    top: 0px;
-    /* Body / 2 - Bolder */
-
+    left: 0;
+    top: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-    /* Primary/B300 */
     color: #7f8cff;
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -102,5 +81,4 @@
     width: 100px;
     gap: 20px;
   }
-
 }
