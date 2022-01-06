@@ -1,8 +1,8 @@
-# Hello Microverse
+# Portfolio-setup-and-mobile-version-skeleton
 
-First Microverse Project
+My Mobile portfolio design 
 
-The project serves as a gateway to some important concepts when dealing with github. for example github workflow, branching.
+This project defines me as software developers giving the companies details about me that will help the to know more and the platforms that they will need to communicate with me
 
 ## Built With
 
