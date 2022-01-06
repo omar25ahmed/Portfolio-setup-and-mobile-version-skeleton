@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   body {
-    background-image: url("images/background.png");
-    background-repeat: no-repeat;
+    background-color: white;
   }
 
   header {
@@ -13,6 +12,7 @@
   .container {
     display: flex;
     justify-content: space-around;
+    gap: 100px;
   }
 
   .item-1 {
@@ -36,7 +36,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 75px 45px 12px 45px;
+    margin: 0;
   }
 
   .description {
@@ -54,8 +54,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 12px 5px 0 12px;
-    padding-left: 45px;
+    margin: 12px 0 0 0;
   }
 
   .connect {
@@ -73,19 +72,28 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0 5px 5px 12px;
-    padding-left: 50px;
   }
 
-  .container-2 {
-    margin: 0 5px 5px 12px;
-    padding-left: 45px;
+  .section-2 {
     display: flex;
-    width: 100px;
-    gap: 20px;
+    flex-direction: column;
   }
 
   ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .container-1 {
+    background-image: url("images/header-shapes-mobile.png");
+    background-repeat: no-repeat;
+    padding: 114px 24px;
+    height: 604px;
   }
 }
