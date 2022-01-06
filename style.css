@@ -1,3 +1,108 @@
-@media (min-width:480px)  {
-  
+@media (max-width: 480px) {
+  body {
+    background-image: url("images/header-background-mobile.svg");
+  }
+  header {
+    margin-top: 40px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .item-1 {
+    width: 50%;
+  }
+  .first-title {
+    position: static;
+    width: 260px;
+    height: 150px;
+    left: 24px;
+    top: 114px;
+
+    /* Header / 2 */
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+
+    display: flex;
+    align-items: center;
+
+    /* Neutrals/N800 */
+
+    color: #172b4d;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 75px 45px 12px 45px;
+  }
+  .description {
+    position: static;
+    width: 327px;
+    height: 146px;
+    left: 24px;
+    top: 276px;
+
+    /* Body / 2 */
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    /* Neutrals/N600 */
+
+    color: #344563;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 5px 0px 12px;
+    padding-left: 45px;
+  }
+  .connect {
+    position: static;
+    width: 200px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+
+    /* Body / 2 - Bolder */
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    /* Primary/B300 */
+
+    color: #7f8cff;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 5px 5px 12px;
+    padding-left: 45px;
+  }
+  .container-2 {
+    margin: 0px 5px 5px 12px;
+    padding-left: 45px;
+    display: flex;
+    width: 100px;
+    gap: 20px;
+  }
 }
