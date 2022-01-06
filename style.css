@@ -83,11 +83,9 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-
     gap: 20px;
     margin: 0;
     padding: 0;
-
   }
 
   .container-1 {
