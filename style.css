@@ -2,16 +2,20 @@
   body {
     background-image: url("images/header-background-mobile.svg");
   }
+
   header {
     margin-top: 40px;
   }
+
   .container {
     display: flex;
     justify-content: space-around;
   }
+
   .item-1 {
     width: 50%;
   }
+
   .first-title {
     position: static;
     width: 260px;
@@ -42,6 +46,7 @@
     flex-grow: 0;
     margin: 75px 45px 12px 45px;
   }
+
   .description {
     position: static;
     width: 327px;
@@ -67,9 +72,10 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 12px 5px 0px 12px;
+    margin: 12px 5px 0 12px;
     padding-left: 45px;
   }
+
   .connect {
     position: static;
     width: 200px;
@@ -98,6 +104,7 @@
     margin: 0px 5px 5px 12px;
     padding-left: 50px;
   }
+
   .container-2 {
     margin: 0px 5px 5px 12px;
     padding-left: 45px;
@@ -105,4 +112,5 @@
     width: 100px;
     gap: 20px;
   }
+
 }
