@@ -83,7 +83,6 @@
     display: flex;
     width: 100px;
     gap: 20px;
-    justify-content: baseline;
   }
 
   ul {
