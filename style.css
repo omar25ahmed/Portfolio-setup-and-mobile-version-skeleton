@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
+
 @media (max-width: 480px) {
   body {
-    background-image: url("images/header-background-mobile.svg");
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
   }
 
   header {
@@ -22,7 +25,7 @@
     height: 150px;
     left: 24px;
     top: 114px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -42,7 +45,7 @@
     height: 146px;
     left: 24px;
     top: 276px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -61,7 +64,7 @@
     height: 24px;
     left: 0;
     top: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -80,5 +83,10 @@
     display: flex;
     width: 100px;
     gap: 20px;
+    justify-content: baseline;
+  }
+
+  ul {
+    list-style-type: none;
   }
 }
