@@ -113,7 +113,7 @@
     height: 552px;
     left: calc(50% - 327px / 2);
     top: 114px;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #dfe1e6;
     box-sizing: border-box;
     border-radius: 16px;
@@ -188,18 +188,6 @@
     order: 0;
     flex-grow: 0;
     margin: 0 0;
-  }
-
-  flex0 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    position: static;
-    width: 295px;
-    height: 288px;
-    left: 16px;
-    top: 248px;
   }
 
   .description-2 {
