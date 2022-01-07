@@ -568,9 +568,9 @@
     height: 24px;
     left: 61px;
     top: 0;
-    background: #6070FF;
-    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
-    border: solid 1px #6070FF;
+    background: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    border: solid 1px #6070ff;
     border-radius: 8px;
     flex: none;
     flex-grow: 0;
@@ -608,8 +608,8 @@
     height: 24px;
     left: 61px;
     top: 0;
-    background: #2230D2;
-    border: solid 1px #2230D2;
+    background: #2230d2;
+    border: solid 1px #2230d2;
     border-radius: 8px;
     flex: none;
     flex-grow: 0;
