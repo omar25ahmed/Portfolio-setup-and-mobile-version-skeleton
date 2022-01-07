@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   body {
     background-color: white;
     margin: 0;
@@ -441,5 +441,233 @@
     flex: none;
     flex-grow: 0;
     text-decoration: none;
+  }
+
+  .about-myself {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 375px;
+    height: 1125.15px;
+    left: calc(50% - 375px / 2);
+    top: 3506px;
+  }
+
+  .container-3 {
+    background: #e5e5e5;
+    background-image: url("images/Base-about-myself.png");
+    position: absolute;
+    width: 375px;
+    height: 1263px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 327px;
+    height: 409px;
+    left: 24px;
+    top: 114px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 114px 24px auto 24px;
+  }
+
+  .first-title-2 {
+    position: static;
+    width: 265px;
+    height: 101px;
+    left: 0px;
+    top: 0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+  }
+
+  .description-3 {
+    position: static;
+    width: 327px;
+    height: 144px;
+    left: 0px;
+    top: 113px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+  }
+
+  .connect-2 {
+    position: static;
+    width: 117px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .highlight-3 {
+    padding: 4px 12px;
+    position: static;
+    width: 45px;
+    height: 24px;
+    left: 61px;
+    top: 0px;
+    background: #fff;
+    border: solid 1px #396df2;
+    border-radius: 8px;
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 8px;
+  }
+
+  .font-5 {
+    position: static;
+    width: 138px;
+    height: 24px;
+    left: 12px;
+    top: 12px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 20px 0;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 327px;
+    height: 464.15px;
+    left: 24px;
+    top: 547px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 34px 24px auto 24px;
+  }
+
+  .ul-box3 {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .li-1 {
+    margin-bottom: 36px;
+  }
+
+  .flex1 {
+    display: flex;
+    justify-content: baseline;
+    margin-right: 0;
+    padding-right: 20px;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 36px;
+  }
+
+  .lang {
+    top: calc(50% - 24px / 2);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 80px;
+    color: #000000;
+  }
+
+  .arrow {
+    width: 14px;
+    height: 8px;
+    padding-left: 50px;
+    margin-left: 20px;
+    padding-top: 7px;
+  }
+
+  .frame {
+    position: static;
+    width: 303px;
+    height: 66.72px;
+    left: 12px;
+    top: 12px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    flex: none;
+    flex-grow: 0;
+    margin: 12px auto 12px 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+
+  .js {
+    padding: 9px 9.72px 12px;
+  }
+
+  .langu {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #253858;
+    margin: 25px auto 21.72px 12px;
+  }
+
+  hr.solid {
+    text-align: center;
+    border-top: 3px solid #dfe1e6;
+    width: 327px;
+  }
+
+  .skill-img {
+    padding-left: 75px;
   }
 }
