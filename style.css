@@ -134,16 +134,16 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .tonic {
     position: static;
     width: 295px;
     height: 36px;
-    left: 0px;
-    top: 0px;
-    font-family: Poppins;
+    left: 0;
+    top: 0;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -152,7 +152,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .ul-box1 {
@@ -165,7 +165,7 @@
   }
 
   .canopy {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
@@ -174,11 +174,11 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0 0;
   }
 
   .light {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
@@ -187,14 +187,14 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0 0;
   }
 
   flex0 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     position: static;
     width: 295px;
     height: 288px;
@@ -206,9 +206,9 @@
     position: static;
     width: 295px;
     height: 76px;
-    left: 0px;
+    left: 0;
     top: 92px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -217,7 +217,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .ul-box2 {
@@ -236,13 +236,13 @@
     width: 45px;
     height: 24px;
     left: 61px;
-    top: 0px;
+    top: 0;
     background: #ebebff;
     border-radius: 8px;
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 8px;
+    margin: 0 8px;
   }
 
   .font-1 {
@@ -251,7 +251,7 @@
     height: 16px;
     left: 12px;
     top: 4px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -261,7 +261,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0 0;
   }
 
   .font-2 {
@@ -270,7 +270,7 @@
     height: 16px;
     left: 12px;
     top: 4px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -280,7 +280,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0 0;
   }
 
   .font-3 {
@@ -289,7 +289,7 @@
     height: 16px;
     left: 12px;
     top: 4px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -299,7 +299,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0 0;
   }
 
   .highlight-2 {
@@ -313,7 +313,7 @@
     height: 48px;
     left: 0;
     top: calc(50% - 48px / 2);
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #7f8cff;
     box-sizing: border-box;
     border-radius: 8px;
@@ -322,7 +322,7 @@
 
   .font-4 {
     position: static;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -353,12 +353,12 @@
     box-sizing: border-box;
     border-radius: 8px;
     order: 3;
-    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
 
   .font-4:hover {
     position: static;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -393,7 +393,7 @@
 
   .font-4:visited {
     position: static;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -428,7 +428,7 @@
 
   .font-4:disabled {
     position: static;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -467,7 +467,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     position: static;
     width: 327px;
     height: 409px;
@@ -483,9 +483,9 @@
     position: static;
     width: 265px;
     height: 101px;
-    left: 0px;
-    top: 0px;
-    font-family: Poppins;
+    left: 0;
+    top: 0;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -496,16 +496,16 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .description-3 {
     position: static;
     width: 327px;
     height: 144px;
-    left: 0px;
+    left: 0;
     top: 113px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -514,16 +514,16 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .connect-2 {
     position: static;
     width: 117px;
     height: 24px;
-    left: 0px;
-    top: 0px;
-    font-family: Poppins;
+    left: 0;
+    top: 0;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -540,13 +540,13 @@
     width: 45px;
     height: 24px;
     left: 61px;
-    top: 0px;
+    top: 0;
     background: #fff;
     border: solid 1px #396df2;
     border-radius: 8px;
     flex: none;
     flex-grow: 0;
-    margin: 0px 8px;
+    margin: 0 8px;
   }
 
   .font-5 {
@@ -555,7 +555,7 @@
     height: 24px;
     left: 12px;
     top: 12px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -577,7 +577,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     position: static;
     width: 327px;
     height: 464.15px;
@@ -600,7 +600,6 @@
 
   .flex1 {
     display: flex;
-    justify-content: baseline;
     margin-right: 0;
     padding-right: 20px;
     padding-left: 0;
@@ -610,13 +609,13 @@
 
   .lang {
     top: calc(50% - 24px / 2);
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     padding-right: 80px;
-    color: #000000;
+    color: #000;
   }
 
   .arrow {
@@ -650,7 +649,7 @@
   }
 
   .langu {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
