@@ -210,8 +210,6 @@
 
   .ul-box2 {
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
     gap: 8px;
     margin: 0;
     padding: 0;
@@ -220,7 +218,7 @@
 
   .highlight {
     padding: 4px 12px;
-    position: static;
+    position: relative;
     width: 45px;
     height: 24px;
     left: 61px;
@@ -231,6 +229,7 @@
     order: 1;
     flex-grow: 0;
     margin: 0 8px;
+    float: left;
   }
 
   .font-1 {
