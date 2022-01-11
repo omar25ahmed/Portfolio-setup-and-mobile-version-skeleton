@@ -836,4 +836,8 @@ color: #EBEBFF;
 
   }
   
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 24px 20px 24px;
 }
