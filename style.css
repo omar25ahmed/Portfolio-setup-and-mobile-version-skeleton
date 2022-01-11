@@ -436,7 +436,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+
     width: 375px;
     height: 1125.15px;
     left: calc(50% - 375px / 2);
@@ -446,7 +446,7 @@
   .container-3 {
     background: #f7f7f9;
     background-image: url("images/Base-about-myself.png");
-    position: absolute;
+
     width: 375px;
     height: 1263px;
   }
@@ -779,4 +779,61 @@
   .skill-img {
     padding-left: 75px;
   }
+
+  .footer {
+width: 375px;
+height: 779px;
+
+
+/* Primary/B400 */
+
+background: #6070FF;
+border-radius: 76px 0 0 0;
+  }
+
+  .container-4 {
+      background: #6070ff;
+      box-sizing: border-box;
+      height: 779px;
+      padding: 103px 24px 8px 24px;
+      border-radius: 76px 0 0 0;
+      background-image: url("images/contact.png");
+      background-repeat: no-repeat;
+      background-position: right 21px;
+      background-size: auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .first-title-3 {
+    font-family: "Poppins", sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 52px;
+/* or 130% */
+height: 56px;
+display: flex;
+align-items: center;
+text-align: center;
+margin: 0 auto 0 35px;
+
+/* Neutrals/N0 */
+
+color: #FFFFFF;
+  }
+
+  .description-4 {
+    font-family: Poppins;
+    width: 327px;
+height: 102px;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+
+  }
+  
 }
