@@ -436,7 +436,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
     width: 375px;
     height: 1125.15px;
     left: calc(50% - 375px / 2);
@@ -446,7 +445,6 @@
   .container-3 {
     background: #f7f7f9;
     background-image: url("images/Base-about-myself.png");
-    position: absolute;
     width: 375px;
     height: 1263px;
   }
@@ -778,5 +776,220 @@
 
   .skill-img {
     padding-left: 75px;
+  }
+
+  .footer {
+    width: 375px;
+    height: 779px;
+
+    /* Primary/B400 */
+
+    background: #6070ff;
+    border-radius: 76px 0 0 0;
+  }
+
+  .container-4 {
+    background: #6070ff;
+    box-sizing: border-box;
+    height: 779px;
+    padding: 103px 24px 8px 24px;
+    border-radius: 76px 0 0 0;
+    background-image: url("images/contact.png");
+    background-repeat: no-repeat;
+    background-position: right 21px;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-title-3 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+
+    /* or 130% */
+    height: 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto 0 35px;
+
+    /* Neutrals/N0 */
+
+    color: #fff;
+  }
+
+  .description-4 {
+    font-family: "poppins", sans-serif;
+    width: 327px;
+    height: 102px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 24px 20px 24px;
+    margin-left: 0;
+    margin-top: 35px;
+  }
+
+  input {
+    background: #fff;
+    width: 300px;
+    height: 48px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    margin: 10px 0 10px 0;
+    padding-left: 20px;
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+  }
+
+  textarea {
+    background: #fff;
+
+    /* Base/100 */
+
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    width: 300px;
+    height: 170px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #b3bac5;
+  }
+
+  .highlight-4 {
+    background: #fff;
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid white;
+    width: 150px;
+    margin-top: 15px;
+  }
+
+  .font-6 {
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
+  .highlight-4:hover {
+    background: #6070ff;
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #6070ff;
+    width: 150px;
+    margin-top: 15px;
+  }
+
+  .font-6:hover {
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: white;
+  }
+
+  .highlight-4:visited {
+    background: #2230d2;
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #2230d2;
+    width: 150px;
+    margin-top: 15px;
+  }
+
+  .font-6:visited {
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: white;
+  }
+
+  .highlight-4:disabled {
+    background: #e5e5e5;
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #5e6c84;
+    width: 150px;
+    margin-top: 15px;
+  }
+
+  .font-6:disabled {
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #5e6c84;
+  }
+
+  .shape {
+    position: relative;
+    width: 134px;
+    height: 5px;
+    left: calc(50% - 134px / 2 - 0.5px);
+    bottom: 2px;
+    background: #0d151e;
+    border-radius: 10px;
   }
 }
