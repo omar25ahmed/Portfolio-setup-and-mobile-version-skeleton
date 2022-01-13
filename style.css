@@ -33,7 +33,21 @@
 
   .logo {
     padding-top: 17px;
+    Animation-name: rotate; 
+    Animation-delay: 5s; 
+    animation-duration: 3s;
+    animation-iteration-count: 2; 
   }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    
+    to {
+      transform: rotate(360deg);
+    }
+    } 
 
   .ul-menu {
     list-style-type: none;
