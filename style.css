@@ -801,8 +801,7 @@
     border-radius: 76px 0 0 0;
     background-image: url("images/fotb.png");
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     width: 99vmax;
