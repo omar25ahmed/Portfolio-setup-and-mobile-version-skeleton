@@ -321,6 +321,7 @@
   }
 
   .highlight-2:hover {
+    transition: box-shadow 1s, color 1s, background-color 1s linear;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -331,7 +332,7 @@
     height: 48px;
     left: 0;
     top: calc(50% - 48px / 2);
-    background: #6070ff;
+    background-color: #6070ff;
     border: 1px solid #7f8cff;
     box-sizing: border-box;
     border-radius: 8px;
