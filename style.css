@@ -115,10 +115,18 @@
     align-items: center;
   }
 
+  .card-2 {
+    display: flex;
+    gap: 46px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
   .snapshot {
     margin: 24px auto 24px 24px;
     width: 90%;
   }
+
   .snapshot-2 {
     margin: 24px 24px 24px auto;
     width: 90%;
@@ -447,9 +455,9 @@
     margin-top: 24px;
     margin-bottom: 24px;
     order: -1;
-    padding-left: 50px;
+    padding-right: 20px;
     width: auto;
-
+    padding-left: 10px;
   }
 
   .about-myself {
