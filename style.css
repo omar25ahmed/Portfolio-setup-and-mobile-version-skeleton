@@ -119,6 +119,10 @@
     margin: 24px auto 24px 24px;
     width: 90%;
   }
+  .snapshot-2 {
+    margin: 24px 24px 24px auto;
+    width: 90%;
+  }
 
   .right-cont {
     margin-top: 24px;
@@ -204,6 +208,7 @@
     margin: 0;
     padding: 0;
     order: 2;
+    flex-wrap: wrap;
   }
 
   .highlight {
@@ -439,11 +444,12 @@
   }
 
   .left-cont {
-    margin-top: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     order: -1;
     padding-left: 50px;
-    padding-right: 20px;
-    width: 400px;
+    width: auto;
+
   }
 
   .about-myself {
@@ -1135,6 +1141,20 @@
   }
 
   .snapshot {
+    position: static;
+    width: 295px;
+    height: 220px;
+    left: 16px;
+    top: 16px;
+    background: url(blog_drbl_4x.png);
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0;
+  }
+
+  .snapshot-2 {
     position: static;
     width: 295px;
     height: 220px;
