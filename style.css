@@ -51,7 +51,7 @@
   }
 
   .first-title {
-    margin: 314px auto auto 260px;
+    margin: 280px auto auto 150px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -64,18 +64,18 @@
   }
 
   .description {
-    margin: 12px 260px auto 260px;
+    margin: 12px 260px auto 150px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 28px;
     color: #344563;
-    width: 920px;
+    width: 70%;
   }
 
   .section-2 {
-    margin: 12px auto auto 260px;
+    margin: 12px auto auto 150px;
   }
 
   .connect {
@@ -104,22 +104,25 @@
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
-    width: 1100px;
-    height: 496px;
+    width: 80%;
+    height: auto;
     margin: 100px auto;
   }
 
   .card-1 {
     display: flex;
     gap: 46px;
+    align-items: center;
   }
 
   .snapshot {
     margin: 24px auto 24px 24px;
+    width: 90%;
   }
 
   .right-cont {
-    margin-top: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   .tonic {
@@ -454,6 +457,7 @@
     grid-template-columns: 40% 60%;
     margin: 142px 0 auto 0;
     width: 100%;
+    grid-column-gap: 80px;
   }
 
   .top {
@@ -462,7 +466,7 @@
     align-items: flex-start;
     padding: 0;
     position: static;
-    width: 327px;
+    width: 100%;
     height: 409px;
     left: 24px;
     top: 114px;
@@ -470,7 +474,7 @@
     order: 0;
     flex-grow: 0;
     margin: 114px 24px auto 0;
-    padding-left: 100px;
+    padding-left: 20px;
   }
 
   .first-title-2 {
@@ -495,8 +499,8 @@
 
   .description-3 {
     position: static;
-    width: 380px;
-    height: 144px;
+    width: 100%;
+    height: auto;
     left: 0;
     top: 113px;
     font-family: "Poppins", sans-serif;
@@ -696,8 +700,8 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 100px 24px auto 0;
-    width: 100%;
+    margin: 100px 0 auto 0;
+    width: 80%;
   }
 
   .ul-box3 {
@@ -744,6 +748,7 @@
     padding-left: 0;
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
   }
 
   .frame {
@@ -784,7 +789,7 @@
   hr.solid {
     text-align: center;
     border-top: 3px solid #dfe1e6;
-    width: 680px;
+    width: 90%;
     margin-left: 0;
   }
 
