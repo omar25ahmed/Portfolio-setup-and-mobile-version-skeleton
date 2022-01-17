@@ -2,7 +2,7 @@
 
 My Mobile portfolio design 
 
-This project defines me as software developers giving the companies details about me that will help the to know more and the platforms that they will need to communicate with me
+This project defines me as software developers giving the companies details about me that will help the to know more and the platforms that they will need to communicate with me and the project is responsive too
 
 
 
