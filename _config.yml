@@ -1,1 +1,3 @@
 theme: jekyll-theme-merlot
+gtag('config', 'GA_MEASUREMENT_ID', { 'send_page_view': false });
+gtag('config', 'GA_MEASUREMENT_ID_2');
