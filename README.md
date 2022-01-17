@@ -6,7 +6,6 @@ This project defines me as software developers giving the companies details abou
 
 ## The Live link to my portfolio
 
-https://omar25ahmed.github.io/Portfolio-setup-and-mobile-version-skeleton/
 
 ## Built With
 
