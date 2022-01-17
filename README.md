@@ -4,8 +4,9 @@ My Mobile portfolio design
 
 This project defines me as software developers giving the companies details about me that will help the to know more and the platforms that they will need to communicate with me
 
-## The Live link to my portfolio
+## The Live link of my portfolio
 
+https://omar25ahmed.github.io/Portfolio-setup-and-mobile-version-skeleton/
 
 ## Built With
 
