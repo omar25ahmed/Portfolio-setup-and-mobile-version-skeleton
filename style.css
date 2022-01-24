@@ -20,7 +20,7 @@
     border-radius: 0 0 0 70px;
   }
 
-  nav img {
+  nav .icon {
     display: none;
   }
 
@@ -1029,17 +1029,58 @@
   }
 
   header {
-    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 10PX;
+    width: 100%;
+    background: #fff;
+    align-items: center;
+    box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .icon {
+    color: #6070FF;
   }
 
   .ul-menu {
-    display: none;
+      list-style: none;
+      display: block;
+      position: fixed;
+      top: -120%;
+      left: 0;
+      background: #6070FF;
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+
+
   }
+
+
+
+  nav ul li a {
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    display: block;
+  } 
 
   .container {
     display: flex;
     justify-content: space-around;
     gap: 100px;
+
   }
 
   .item-1 {
