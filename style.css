@@ -1313,7 +1313,7 @@
 
   .snapshot {
     position: static;
-    width: 295px;
+    width: 270px;
     height: 220px;
     left: 16px;
     top: 16px;
@@ -1341,7 +1341,7 @@
 
   .tonic {
     position: static;
-    width: 295px;
+    width: 230px;
     height: 36px;
     left: 0;
     top: 0;
@@ -1395,7 +1395,7 @@
   .description-2 {
     position: static;
     width: 295px;
-    height: 76px;
+    height: auto;
     left: 0;
     top: 92px;
     font-family: "Poppins", sans-serif;
@@ -1636,6 +1636,44 @@
     flex-grow: 0;
     text-decoration: none;
   }
+
+  /* Pop Up Window */
+
+  .bg-modal {
+    background-color: rgba(193, 199, 208, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    width: 85%;
+    height: 90%;
+    background-color: #fff;
+    padding: 16px;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .close-button {
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-size: 40px;
+    color: grey;
+  }
+
+
 
   .about-myself {
     background-color: #e5e5e5;
