@@ -1171,9 +1171,10 @@
     opacity: 0.9;
   }
 
-  .fa-times {
-    transform: rotate(180deg);
-  }
+  .fa-times:before, .fa-xmark:before {
+    content: "\f00d";
+    color: black;
+}
 
   .navbar nav.nav-toggle {
     top: 0;
