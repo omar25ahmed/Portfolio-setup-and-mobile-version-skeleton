@@ -58,7 +58,6 @@
 
   #icon {
     display: none;
-
   }
 
   .container {
@@ -1119,8 +1118,8 @@
     opacity: 0.9;
   }
 
-  .o{
-	  list-style: none;
+  .o {
+    list-style: none;
   }
 
   .ul-menu.nav-menu {
