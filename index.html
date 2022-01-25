@@ -9,6 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Portfolio (mobile version)</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -27,19 +34,18 @@
   </head>
   <body>
     <div class="first-page">
-      <header class="header">
-        <div class="container">
-          <a href=""><img src="images/MyLogo.png" alt="Logo" class="logo" /></a>
-          <nav class="item-2">
-            <img src="images/Hamburguer.png" alt="Menu" />
-            <ul class="ul-menu">
-              <li>Portfolio</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
-          </nav>
-        </div>
+      <header class="navbar">
+        <a href="#" class="logo"><img src="images/MyLogo.png" alt="" /></a>
+        <div id="icon" class="icon fas fa-bars"></div>
+        <nav class="ul-menu">
+          <ul class="o">
+            <li class="desktop"><a href="#portfolio">Portfolio</a></li>
+            <li class="desktop"><a href="#about">About</a></li>
+            <li class="desktop"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </header>
+
       <section>
         <div class="container-1">
           <section>
@@ -82,7 +88,7 @@
         </div>
       </section>
     </div>
-    <section class="work">
+    <section class="work" id="portfolio">
       <div class="card card-1">
         <a href="#"
           ><img src="images/c1d.png" alt="Snapshoot-Portfolio" class="snapshot"
@@ -201,7 +207,7 @@
         </div>
       </div>
     </section>
-    <section class="about-myself">
+    <section class="about-myself" id="about">
       <div class="container-3">
         <div class="top">
           <h1 class="first-title-2">About Myself</h1>
@@ -305,7 +311,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container-4">
         <h1 class="first-title-3">Contact me</h1>
         <p class="description-4">
@@ -344,5 +350,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>

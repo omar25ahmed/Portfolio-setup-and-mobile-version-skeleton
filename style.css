@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 
-@media screen and (max-width: 992px) and (min-width: 601px), (min-width: 993px) {
+@media screen and (max-width: 992px) and (min-width: 601px),
+  (min-width: 993px) {
   body {
     background: #e5e5e5;
     margin: 0;
@@ -18,9 +19,44 @@
     background-size: contain;
     background-position: right;
     border-radius: 0 0 0 70px;
+    position: absolute;
+    top: 3rem;
   }
 
-  nav img {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    padding: 0 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+  }
+
+  .logo {
+    padding-top: 17px;
+  }
+
+  .navbar .logo {
+    font-family: "Poppins", "Times New Roman", Times, serif;
+    color: var(--primary);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  .navbar .fa-bars {
+    color: var(--primary);
+    font-size: 16px;
+  }
+
+  #icon {
     display: none;
   }
 
@@ -31,15 +67,11 @@
     margin-top: 0;
   }
 
-  .logo {
-    padding-top: 17px;
-  }
-
-  .ul-menu {
+  .nav {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 10px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -48,6 +80,23 @@
     color: #344563;
     align-items: center;
     text-align: center;
+    text-decoration: none;
+  }
+
+  .o {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+  }
+
+  .ul-menu li a {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    text-decoration: none;
   }
 
   .first-title {
@@ -98,6 +147,9 @@
 
   .work {
     margin-top: 142px;
+    position: absolute;
+    top: 950px;
+    width: 100%;
   }
 
   .card {
@@ -464,6 +516,8 @@
     height: 924px;
     background-color: #fff;
     border-radius: 0 70px 0 0;
+    position: absolute;
+    top: 3700px;
   }
 
   .container-3 {
@@ -810,7 +864,7 @@
   footer {
     position: absolute;
     left: 0;
-    top: 4315px;
+    top: 4515px;
   }
 
   .container-4 {
@@ -1028,12 +1082,121 @@
     width: 375px;
   }
 
+  body::before {
+    display: block;
+    content: "";
+    height: 60px;
+  }
+
   header {
-    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    background: #fff;
+    align-items: center;
+    box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .icon {
+    color: #6070ff;
   }
 
   .ul-menu {
-    display: none;
+    list-style: none;
+    display: block;
+    position: fixed;
+    top: -120%;
+    left: 0;
+    background: #6070ff;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+  }
+
+  .o {
+    list-style: none;
+  }
+
+  .ul-menu.nav-menu {
+    top: 0;
+  }
+
+  nav ul li a {
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  .navbar {
+    padding: 3% 0;
+    display: flex;
+  }
+
+  .navbar .logo {
+    margin-left: 3%;
+  }
+
+  /* .navbar nav ul li.icon {
+            display: block;
+        } */
+
+  .navbar .icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    font-size: 2rem;
+    z-index: 1000;
+  }
+
+  .navbar nav {
+    position: fixed;
+    top: -120%;
+    width: 100%;
+    height: 100%;
+    background-color: #6070ff;
+    opacity: 0.9;
+  }
+
+  .fa-times::before,
+  .fa-xmark::before {
+    content: "\f00d";
+    color: black;
+  }
+
+  .navbar nav.nav-toggle {
+    top: 0;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .navbar nav ul li {
+    width: 100%;
+  }
+
+  .navbar nav ul li a {
+    display: block;
+    color: #fff;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    font-size: 2.2rem;
+    z-index: 0;
   }
 
   .container {
