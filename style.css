@@ -512,6 +512,90 @@
     padding-left: 10px;
   }
 
+  .bg-modal {
+    background-color: rgba(193, 199, 208, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    width: 65%;
+    height: 90%;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  .modal-content .ul-box1 {
+    padding-left: 20px;
+  }
+
+  .modal-content .snapshot {
+    width: 70%;
+    height: 50%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .flex-99 {
+    display: flex;
+    align-items: baseline;
+    margin-top: 5%;
+  }
+
+  .flex-98 {
+    width: 70%;
+  }
+
+  .close-button {
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-size: 40px;
+    color: grey;
+  }
+
+  .bg-modal .description-2 {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .live-btn {
+    background-color: #fff;
+    color: #396df2;
+    padding: 6px 12.8px;
+    font-size: 16px;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+    height: 48px;
+  }
+
+  .solid-1 {
+    width: 90%;
+    margin-top: 20px;
+  }
+
   .about-myself {
     height: 924px;
     background-color: #fff;
@@ -1174,7 +1258,7 @@
   .fa-times::before,
   .fa-xmark::before {
     content: "\f00d";
-    color: black;
+    color: #fff;
   }
 
   .navbar nav.nav-toggle {
@@ -1313,7 +1397,7 @@
 
   .snapshot {
     position: static;
-    width: 295px;
+    width: 90%;
     height: 220px;
     left: 16px;
     top: 16px;
@@ -1341,8 +1425,8 @@
 
   .tonic {
     position: static;
-    width: 295px;
-    height: 36px;
+    width: auto;
+    height: auto;
     left: 0;
     top: 0;
     font-family: "Poppins", sans-serif;
@@ -1357,6 +1441,10 @@
     margin: 12px 0;
   }
 
+  .card-2 .tonic {
+    width: 120%;
+  }
+
   .ul-box1 {
     list-style-type: none;
     display: flex;
@@ -1364,6 +1452,7 @@
     gap: 12px;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
   }
 
   .canopy {
@@ -1394,8 +1483,8 @@
 
   .description-2 {
     position: static;
-    width: 295px;
-    height: 76px;
+    width: 90%;
+    height: auto;
     left: 0;
     top: 92px;
     font-family: "Poppins", sans-serif;
@@ -1418,6 +1507,7 @@
     margin: 0;
     padding: 0;
     order: 2;
+    flex-wrap: wrap;
   }
 
   .highlight {
@@ -1637,6 +1727,67 @@
     text-decoration: none;
   }
 
+  /* Pop Up Window */
+
+  .bg-modal {
+    background-color: rgba(193, 199, 208, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    width: 85%;
+    height: auto;
+    background-color: #fff;
+    padding: 16px;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 0 auto;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .close-button {
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-size: 40px;
+    color: grey;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .live-btn {
+    background-color: #fff;
+    color: #396df2;
+    padding: 6px 12.8px;
+    font-size: 16px;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+    height: 48px;
+  }
+
+  .solid-1 {
+    width: 90%;
+    margin-top: 20px;
+  }
+
   .about-myself {
     background-color: #e5e5e5;
     display: flex;
@@ -1707,6 +1858,10 @@
     order: 0;
     flex-grow: 0;
     margin: 12px 0;
+  }
+
+  .bg-modal .description-3 {
+    display: none;
   }
 
   .connect-2 {
