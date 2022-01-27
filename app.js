@@ -122,10 +122,6 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.querySelector('.error');
 
-function isUpper(str) {
-  return /[a-z]/.test(str) && /[A-Z]/.test(str);
-}
-
 form.addEventListener('submit', (e) => {
   const message = [];
   if (email.value !== email.value.toLowerCase()) {
