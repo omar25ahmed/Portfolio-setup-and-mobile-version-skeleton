@@ -32,9 +32,9 @@ This project defines me as software developers giving the companies details abou
 
 **To Create A Portfolio from this Repository feel free to contact me.**
 
-** To get a local copy up and running follow these simple steps.
-- you can clone this repo by typing `git clone git@github.com:omar25ahmed/Portfolio-setup-and-mobile-version-skeleton.git`
-- type `cd Portfolio-setup-and-mobile-version-skeleton` to access the project on terminal
+**To get a local copy up and running follow these simple steps.**
+- you can clone this repo by typing `git clone git@github.com:omar25ahmed/Portfolio-setup-and-mobile-version-skeleton.git`.
+- type `cd Portfolio-setup-and-mobile-version-skeleton` to access the project on terminal.
 
 ## Authors
 
