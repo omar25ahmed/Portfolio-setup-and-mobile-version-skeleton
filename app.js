@@ -142,3 +142,11 @@ if (localStorage.formLocal) {
   email.value = (formLocal.email);
   message.value = (formLocal.message);
 }
+form.addEventListener('input', () => {
+  formLocal.name = name.value;
+  localStorage.formLocal = JSON.stringify(formLocal);
+  formLocal.email = email.value;
+  localStorage.formLocal = JSON.stringify(formLocal);
+  formLocal.message = message.value;
+  localStorage.formLocal = JSON.stringify(formLocal);
+});
