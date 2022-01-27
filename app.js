@@ -117,3 +117,22 @@ btns.forEach((btn, index) => {
     popUp(index);
   });
 });
+
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.querySelector('.error');
+
+function isUpper(str) {
+  return /[a-z]/.test(str) && /[A-Z]/.test(str);
+}
+
+form.addEventListener('submit', (e) => {
+  const message = [];
+  if (isUpper(email.value) === true) {
+    e.preventDefault();
+    message.push('E-mail has to be in lowercase letters !!!');
+  }
+  if (message.length > 0) {
+    error.innerText = message.join(', ');
+  }
+});
