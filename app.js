@@ -128,7 +128,7 @@ function isUpper(str) {
 
 form.addEventListener('submit', (e) => {
   const message = [];
-  if (isUpper(email.value) === true) {
+  if (email.value !== email.value.toLowerCase()) {
     e.preventDefault();
     message.push('E-mail has to be in lowercase letters !!!');
   }
