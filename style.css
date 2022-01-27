@@ -969,6 +969,16 @@
     justify-content: center;
   }
 
+  .error {
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
+
   .first-title-3 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -2152,7 +2162,6 @@
   .container-4 {
     background: #6070ff;
     box-sizing: border-box;
-    height: 779px;
     padding: 103px 24px 8px 24px;
     border-radius: 76px 0 0 0;
     background-image: url("images/contact.png");
@@ -2161,6 +2170,16 @@
     background-size: auto;
     display: flex;
     flex-direction: column;
+  }
+
+  .error {
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
   }
 
   .first-title-3 {
