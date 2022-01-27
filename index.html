@@ -326,6 +326,7 @@
           with it
         </p>
         <form
+          id="form"
           class="contact-form"
           action="https://formspree.io/f/xyyokgln"
           method="post"
@@ -338,11 +339,13 @@
             required
           />
           <input
+            id="email"
             type="email"
             name="email-address"
             placeholder="Email address"
             required
           />
+          <small class="error"></small>
           <textarea
             name="comment"
             placeholder="Write your message here"
