@@ -135,46 +135,6 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// // Form Local Storage
-
-// form.addEventListener('submit', () => {
-//   // Set Value And LocalStorage
-
-//   name = name.value;
-//   localStorage.setItem('name', name);
-
-//   email = email.value;
-//   localStorage.setItem('email', email);
-
-//   message = message.value;
-//   localStorage.setItem('message', message);
-// });
-
-// name.value = localStorage.getItem('name');
-// message.value = localStorage.getItem('message');
-
-// function showData(data) {
-//   name.value = data.formName;
-//   message.value = data.formMessage;
-//   email.value = data.formEmail;
-// }
-
-// function setLocalStorage(obj) {
-//   localStorage.setItem('formData', JSON.stringify(obj));
-// }
-
-// form.addEventListener('input', () => {
-//   const infoObject = {
-//     formName: name.value,
-//     formEmail: email.value,
-//     formMessage: message.value,
-//   };
-//   setLocalStorage(infoObject);
-// });
-
-// const getData = JSON.parse(localStorage.getItem('formData'));
-// showData(getData);
-
 let formLocal = { name: '', email: '', message: '' };
 if (localStorage.formLocal) {
   formLocal = JSON.parse(localStorage.formLocal);
