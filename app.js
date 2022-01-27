@@ -25,7 +25,7 @@ const cards = [
     title: 'Multi-Post Stories',
     info: ['facebook', 'full stack dev', '2015'],
     description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
     skills: ['html', 'css', 'javascript'],
     image: 'images/c2d.png',
     liveLink: 'see live',
@@ -35,7 +35,7 @@ const cards = [
     title: 'Facebook 360',
     info: ['facebook', 'backend', '2015'],
     description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
     skills: ['html', 'css', 'javascript'],
     image: 'images/c3d.png',
     liveLink: 'see live',
@@ -45,7 +45,7 @@ const cards = [
     title: 'Uber Navigation',
     info: ['UBER', ' Lead Developer', '2015'],
     description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
     skills: ['html', 'css', 'javascript'],
     image: 'images/c4d.png',
     liveLink: 'see live',
@@ -117,10 +117,12 @@ btns.forEach((btn, index) => {
     popUp(index);
   });
 });
-
+// Form Validation
 const form = document.getElementById('form');
-const email = document.getElementById('email');
 const error = document.querySelector('.error');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
 
 form.addEventListener('submit', (e) => {
   const message = [];
@@ -132,3 +134,51 @@ form.addEventListener('submit', (e) => {
     error.innerText = message.join(', ');
   }
 });
+
+// // Form Local Storage
+
+// form.addEventListener('submit', () => {
+//   // Set Value And LocalStorage
+
+//   name = name.value;
+//   localStorage.setItem('name', name);
+
+//   email = email.value;
+//   localStorage.setItem('email', email);
+
+//   message = message.value;
+//   localStorage.setItem('message', message);
+// });
+
+// name.value = localStorage.getItem('name');
+// message.value = localStorage.getItem('message');
+
+// function showData(data) {
+//   name.value = data.formName;
+//   message.value = data.formMessage;
+//   email.value = data.formEmail;
+// }
+
+// function setLocalStorage(obj) {
+//   localStorage.setItem('formData', JSON.stringify(obj));
+// }
+
+// form.addEventListener('input', () => {
+//   const infoObject = {
+//     formName: name.value,
+//     formEmail: email.value,
+//     formMessage: message.value,
+//   };
+//   setLocalStorage(infoObject);
+// });
+
+// const getData = JSON.parse(localStorage.getItem('formData'));
+// showData(getData);
+
+let formLocal = { name: '', email: '', message: '' };
+if (localStorage.formLocal) {
+  formLocal = JSON.parse(localStorage.formLocal);
+  name.value = (formLocal.name);
+  email.value = (formLocal.email);
+  message.value = (formLocal.message);
+}
