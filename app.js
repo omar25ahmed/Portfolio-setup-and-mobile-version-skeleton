@@ -1,69 +1,67 @@
-const menu = document.querySelector('#icon');
-const navbar = document.querySelector('nav');
-menu.addEventListener('click', () => {
-  menu.classList.toggle('fa-times');
-  navbar.classList.toggle('nav-toggle');
+const menu = document.querySelector("#icon");
+const navbar = document.querySelector("nav");
+menu.addEventListener("click", () => {
+	menu.classList.toggle("fa-times");
+	navbar.classList.toggle("nav-toggle");
 });
 
-window.addEventListener('scroll', () => {
-  menu.classList.remove('fa-times');
-  navbar.classList.remove('nav-toggle');
+window.addEventListener("scroll", () => {
+	menu.classList.remove("fa-times");
+	navbar.classList.remove("nav-toggle");
 });
 
 const cards = [
-  {
-    title: 'Tonic',
-    info: ['facebook', 'backend', '2015'],
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'images/c1d.png',
-    liveLink: 'see live',
-    sourceLink: 'see source',
-  },
-  {
-    title: 'Multi-Post Stories',
-    info: ['facebook', 'full stack dev', '2015'],
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'images/c2d.png',
-    liveLink: 'see live',
-    sourceLink: 'see source',
-  },
-  {
-    title: 'Facebook 360',
-    info: ['facebook', 'backend', '2015'],
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'images/c3d.png',
-    liveLink: 'see live',
-    sourceLink: 'see source',
-  },
-  {
-    title: 'Uber Navigation',
-    info: ['UBER', ' Lead Developer', '2015'],
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'images/c4d.png',
-    liveLink: 'see live',
-    sourceLink: 'see source',
-  },
+	{
+		title: "Tonic",
+		info: ["facebook", "backend", "2015"],
+		description:
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+		skills: ["html", "css", "javascript"],
+		image: "images/c1d.png",
+		liveLink: "see live",
+		sourceLink: "see source",
+	},
+	{
+		title: "Multi-Post Stories",
+		info: ["facebook", "full stack dev", "2015"],
+		description:
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+		skills: ["html", "css", "javascript"],
+		image: "images/c2d.png",
+		liveLink: "see live",
+		sourceLink: "see source",
+	},
+	{
+		title: "Facebook 360",
+		info: ["facebook", "backend", "2015"],
+		description:
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+		skills: ["html", "css", "javascript"],
+		image: "images/c3d.png",
+		liveLink: "see live",
+		sourceLink: "see source",
+	},
+	{
+		title: "Uber Navigation",
+		info: ["UBER", " Lead Developer", "2015"],
+		description:
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+		skills: ["html", "css", "javascript"],
+		image: "images/c4d.png",
+		liveLink: "see live",
+		sourceLink: "see source",
+	},
 ];
 
-const btns = document.querySelectorAll('.work button');
-const bgModal = document.querySelector('.bg-modal');
+const btns = document.querySelectorAll(".work button");
+const bgModal = document.querySelector(".bg-modal");
 
 function popUp(index) {
-  const {
-    title, info, description, skills, image,
-  } = cards[index];
-  const [info1, info2, info3] = info;
-  const [skill1, skill2, skill3] = skills;
+	const { title, info, description, skills, image } = cards[index];
+	const [info1, info2, info3] = info;
+	const [skill1, skill2, skill3] = skills;
 
-  bgModal.innerHTML = `
+	bgModal.innerHTML = `
   <div class="modal-content">
         <div class="modal-header">
           <h3 class="tonic">${title}</h3>
@@ -106,45 +104,45 @@ function popUp(index) {
         </div>
       </div>
   `;
-  bgModal.style.display = 'flex';
-  document.querySelector('.close-button').addEventListener('click', () => {
-    document.querySelector('.bg-modal').style.display = 'none';
-  });
+	bgModal.style.display = "flex";
+	document.querySelector(".close-button").addEventListener("click", () => {
+		document.querySelector(".bg-modal").style.display = "none";
+	});
 }
 
 btns.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    popUp(index);
-  });
+	btn.addEventListener("click", () => {
+		popUp(index);
+	});
 });
 // Form Validation
-const form = document.getElementById('form');
-const error = document.querySelector('.error');
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
+const form = document.getElementById("form");
+const error = document.querySelector(".error");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
 
-form.addEventListener('submit', (e) => {
-  const message = '';
-  if (email.value !== email.value.toLowerCase()) {
-    e.preventDefault();
-    message.push('E-mail has to be in lowercase letters !!!');
-  }
-  if (message.length > 0) {
-    error.innerText = message.join(', ');
-  }
+form.addEventListener("submit", (e) => {
+	const message = [];
+	if (email.value !== email.value.toLowerCase()) {
+		e.preventDefault();
+		message.push("E-mail has to be in lowercase letters !!!");
+	}
+	if (message.length > 0) {
+		error.innerText = message.join(", ");
+	}
 });
 
-let formLocal = { name: '', email: '', message: '' };
+let formLocal = { name: "", email: "", message: "" };
 if (localStorage.formLocal) {
-  formLocal = JSON.parse(localStorage.formLocal);
-  name.value = (formLocal.name);
-  email.value = (formLocal.email);
-  message.value = (formLocal.message);
+	formLocal = JSON.parse(localStorage.formLocal);
+	name.value = formLocal.name;
+	email.value = formLocal.email;
+	message.value = formLocal.message;
 }
-form.addEventListener('input', () => {
-  localStorage.formLocal = JSON.stringify(formLocal);
-  formLocal.name = name.value;
-  formLocal.email = email.value;
-  formLocal.message = message.value;
+form.addEventListener("input", () => {
+	localStorage.formLocal = JSON.stringify(formLocal);
+	formLocal.name = name.value;
+	formLocal.email = email.value;
+	formLocal.message = message.value;
 });
