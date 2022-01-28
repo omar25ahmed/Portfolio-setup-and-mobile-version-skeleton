@@ -125,7 +125,7 @@ const email = document.getElementById('email');
 const message = document.getElementById('message');
 
 form.addEventListener('submit', (e) => {
-  const message = "";
+  const message = '';
   if (email.value !== email.value.toLowerCase()) {
     e.preventDefault();
     message.push('E-mail has to be in lowercase letters !!!');
