@@ -135,16 +135,17 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-let formLocal = { name: '', email: '', message: '' };
-if (localStorage.formLocal) {
+let formLocal = {name:'', email:'', message: ''}
+if(localStorage.formLocal) {
   formLocal = JSON.parse(localStorage.formLocal);
   name.value = (formLocal.name);
   email.value = (formLocal.email);
   message.value = (formLocal.message);
 }
-form.addEventListener('input', () => {
+form.addEventListener('input', function() {
   localStorage.formLocal = JSON.stringify(formLocal);
   formLocal.name = name.value;
   formLocal.email = email.value;
   formLocal.message = message.value;
 });
+
