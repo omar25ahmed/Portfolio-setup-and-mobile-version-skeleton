@@ -12,6 +12,85 @@ window.addEventListener('scroll', () => {
 
 const cards = [
   {
+    image: 'images/c1d.png',
+    title: 'Tonic',
+    info: ['facebook', 'backend', '2015'],
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ['html', 'css', 'javascript'],
+  },
+  {
+    image: 'images/c2d.png',
+    title: 'Multi-Post Stories',
+    info: ['facebook', 'backend', '2015'],
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ['html', 'css', 'javascript'],
+  },
+  {
+    image: 'images/c3d.png',
+    title: 'Facebook 360',
+    info: ['facebook', 'backend', '2015'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+  },
+  {
+    image: 'images/c4d.png',
+    title: 'UBER navigation',
+    info: ['facebook', 'backend', '2015'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+  },
+];
+
+const work = document.querySelector('#portfolio');
+function cardsBuilder(card, index) {
+  const {
+    image, title, info, description, skills,
+  } = card;
+  const infoHtml = info.map(
+    (i) => `<li class="canopy">${i}</li>
+    ${
+  i === info[info.length - 1]
+    ? ''
+    : '<li><img src="images/Counter.png" alt="counter" /></li>'
+}`,
+  ).join('');
+  const skillsHtml = skills.map(
+    (s) => `<li class="highlight font-1">${s}</li>`,
+  ).join('');
+  work.innerHTML += `
+  <div class="card card-${(index === 0 || index % 2 === 0) ? '1' : '2'}">
+        <a href="#"
+          ><img src="${image}" alt="Snapshoot-Portfolio" class="snapshot"
+        /></a>
+        <div class="${(index === 0 || index % 2 === 0) ? 'right' : 'left'}-cont">
+          <h3 class="tonic flex0">${title}</h3>
+          <ul class="ul-box1 flex0">
+            ${infoHtml}
+          </ul>
+          <p class="description-2 flex0">
+            ${description}
+          </p>
+          <ul class="ul-box2 flex0">
+            ${skillsHtml}
+          </ul>
+          <button class="highlight-2 font-4 flex0 btns">
+            See Project
+          </button>
+        </div>
+      </div>
+  `;
+}
+
+cards.forEach((card, index) => {
+  cardsBuilder(card, index);
+});
+
+const popupCards = [
+  {
     title: 'Tonic',
     info: ['facebook', 'backend', '2015'],
     description:
@@ -59,9 +138,24 @@ const bgModal = document.querySelector('.bg-modal');
 function popUp(index) {
   const {
     title, info, description, skills, image,
-  } = cards[index];
-  const [info1, info2, info3] = info;
-  const [skill1, skill2, skill3] = skills;
+  } = popupCards[index];
+
+  const infoHtml = info
+    .map(
+      (i) => `
+      <li class="canopy">${i}</li>
+      ${
+  i === info[info.length - 1]
+    ? ''
+    : '<li><img src="images/Counter.png" alt="counter" /></li>'
+}
+    `,
+    )
+    .join('');
+
+  const skillsHtml = skills
+    .map((s) => `<li class="highlight font-1">${s}</li>`)
+    .join('');
 
   bgModal.innerHTML = `
   <div class="modal-content">
@@ -70,11 +164,7 @@ function popUp(index) {
           <span class="close-button">+</span>
         </div>
         <ul class="ul-box1 flex0">
-          <li class="canopy">${info1}</li>
-          <li><img src="images/Counter.png" alt="counter" /></li>
-          <li class="light">${info2}</li>
-          <li><img src="images/Counter.png" alt="counter" /></li>
-          <li class="light">${info3}</li>
+          ${infoHtml}
         </ul>
         <a href="#"
           ><img src="${image}" alt="Snapshoot-Portfolio" class="snapshot"
@@ -87,9 +177,7 @@ function popUp(index) {
           </div>
           <div>
             <ul class="ul-box2 flex0">
-              <li class="highlight font-1">${skill1}</li>
-              <li class="highlight font-2">${skill2}</li>
-              <li class="highlight font-3">${skill3}</li>
+             ${skillsHtml}
             </ul>
             <hr class="solid-1">
             <div class="buttons">
@@ -138,9 +226,9 @@ form.addEventListener('submit', (e) => {
 let formLocal = { name: '', email: '', message: '' };
 if (localStorage.formLocal) {
   formLocal = JSON.parse(localStorage.formLocal);
-  name.value = (formLocal.name);
-  email.value = (formLocal.email);
-  message.value = (formLocal.message);
+  name.value = formLocal.name;
+  email.value = formLocal.email;
+  message.value = formLocal.message;
 }
 form.addEventListener('input', () => {
   localStorage.formLocal = JSON.stringify(formLocal);
