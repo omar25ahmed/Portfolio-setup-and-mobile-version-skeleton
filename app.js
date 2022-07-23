@@ -12,36 +12,36 @@ window.addEventListener('scroll', () => {
 
 const cards = [
   {
-    image: 'images/c1d.png',
-    title: 'Tonic',
-    info: ['facebook', 'backend', '2015'],
+    image: 'images/budget.png',
+    title: 'Wishyacht',
+    info: ['frontend', 'backend', 'fullstack'],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    skills: ['html', 'css', 'javascript'],
+    "a web application that allows users to rent and share their wishyacht's.",
+    skills: ['react', 'redux', 'rails'],
   },
   {
-    image: 'images/c2d.png',
-    title: 'Multi-Post Stories',
-    info: ['facebook', 'backend', '2015'],
+    image: 'images/wishyacht.png',
+    title: 'Budget mobile',
+    info: ['Transactions', 'backend', '2022'],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    skills: ['html', 'css', 'javascript'],
+      "a mobile application's that allows users to manage their budget and transactions.",
+    skills: ['ruby', 'rails', 'bootstrap'],
   },
   {
-    image: 'images/c3d.png',
-    title: 'Facebook 360',
-    info: ['facebook', 'backend', '2015'],
+    image: 'images/company.png',
+    title: 'Companies 3D',
+    info: ['frontend', 'Api', '2022'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'css', 'javascript'],
+      'a web application that allows users to see the metrics of the top companies.',
+    skills: ['react', 'redux', 'bootstrap'],
   },
   {
-    image: 'images/c4d.png',
-    title: 'UBER navigation',
-    info: ['facebook', 'backend', '2015'],
+    image: 'images/space.png',
+    title: 'Space travellers',
+    info: ['pair', 'APIs', '2022'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'css', 'javascript'],
+      'Basic app for doing some reservations.',
+    skills: ['react', 'redux', 'bootstrap'],
   },
 ];
 
@@ -91,42 +91,41 @@ cards.forEach((card, index) => {
 
 const popupCards = [
   {
-    title: 'Tonic',
-    info: ['facebook', 'backend', '2015'],
+    title: 'Wishyacht',
+    info: ['frontend', 'backend', 'fullstack'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'images/c1d.png',
+      'This is a Web application where users should sign in to rent a Yacht from a list then reserve it for a determined period, users can then see their reservations or cancel them.',
+    skills: ['react', 'redux', 'rails'],
+    image: 'images/budget.png',
     liveLink: 'see live',
     sourceLink: 'see source',
   },
   {
-    title: 'Multi-Post Stories',
+    title: 'Budget App',
     info: ['facebook', 'full stack dev', '2015'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'images/c2d.png',
+      'The Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    skills: ['ruby', 'rails', 'bootstrap'],
+    image: 'images/wishyacht.png',
     liveLink: 'see live',
     sourceLink: 'see source',
   },
   {
-    title: 'Facebook 360',
-    info: ['facebook', 'backend', '2015'],
+    title: 'Companies 3D',
+    info: ['frontend', 'Api', '2022'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'images/c3d.png',
-    liveLink: 'see live',
+      "this is an informative/numeric web application that shows information about the canadian technical companies and their statistcs like the market cap and the trading status it also has search feature and for each company page it's unique root and responsive website",
+    skills: ['react', 'redux', 'bootstrap'],
+    image: 'images/company.png',
     sourceLink: 'see source',
   },
   {
-    title: 'Uber Navigation',
-    info: ['UBER', ' Lead Developer', '2015'],
+    title: 'Space hub',
+    info: ['pair', 'APIs', '2022'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'images/c4d.png',
+      'A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions',
+    skills: ['react', 'redux', 'bootstrap'],
+    image: 'images/space.png',
     liveLink: 'see live',
     sourceLink: 'see source',
   },
