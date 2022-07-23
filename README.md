@@ -11,7 +11,7 @@ This project defines me as software developers giving the companies details abou
 
 ## Live Demo
 
-[Live Demo Link](https://omar25ahmed.github.io/Portfolio-setup-and-mobile-version-skeleton/)
+[Live Demo Link](https://clever-praline-1fd3c0.netlify.app/)
 
 
 
